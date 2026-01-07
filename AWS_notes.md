@@ -30,3 +30,20 @@ NOTE-
 3. snapshots - We can make copy of them also in different regions also.
 4. can be backed up.
 5. backup lifecycle can be enabled to automate backup.
+
+## 5. AMI - Amazon Machine Image
+
+It is a preconigured template that provides the necessar information to launch an EC2 instance in AWS.
+
+It includes:
+
+1. operating system(eg. Linux, windows)
+2. Application server(Apache, Nginx)
+3. Pre-installed softwares ad configurations.
+
+### Template VS AMI
+
+1. Template stores configuration settings for launching EC2 instance where as, AMI is like a snapschot of EC2
+2. AMI is launches new EC2 instance with same config where as Template provides a standar way to define instance.
+3. Template does not have OS or software, it refers API and adds details from there.
+4. Template is for reusing same config.
