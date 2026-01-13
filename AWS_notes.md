@@ -47,3 +47,46 @@ It includes:
 2. AMI is launches new EC2 instance with same config where as Template provides a standar way to define instance.
 3. Template does not have OS or software, it refers API and adds details from there.
 4. Template is for reusing same config.
+
+## AWS ELB - Elastic Load Balancer
+
+ELB & ASG - Auto scaling Group
+
+--> Terms
+
+### Scalibility -
+
+Means ability to grow your system's resources when your application or website gets more traffic or more users.
+
+How to magnage heavy trafic?
+
+1. vertical Scaling (scalling up)
+   a. Vertical scalability means adding more power (CPU, RAM) to your existing server.
+   b. EX. t2.micro to m5.large
+
+2. Horizontal Scalling (Scaling out)  
+   a. Horizontal scaling means adding more instances (servers) to distribute the load.
+   b. You can add more EC2 machines behind a load balancer.
+
+### High Availability(HA)
+
+Means keeping the service up and running with minimal downtime, so its always accessable to users.
+Ex. running resourses in multiple Availability Zones.
+
+### Elasticity
+
+Means the ability to automatically adjust resourses as the demand changes adding more when needed and removing when its no longer necessary.
+
+Ex. ASG
+
+## ELB summary:-
+
+1. Distributes traffic :- splits traffic across multiple servers so no single server gets overloaded.
+2. Improves availability:- in case server goes down - sends traffic automatically, ensuring app stays available
+3. Scales Resourses :- helps manage high demand by adding more servers during peak times and distributing the load
+
+## Types of ELB
+
+1. Application load balancer(ALB):- perfect for web applications, handling HTTP & HTTPS requests(layer7)
+2. Network load balancer(NLB):- high performance, low latency, - gaming, financial apps.
+3. Gateway Load Balancer(GLB):- helps deploy, scale and manage third party virtual appliances, such as firewalls and monitoring solutions.
