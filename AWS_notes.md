@@ -50,8 +50,6 @@ It includes:
 
 ## AWS ELB - Elastic Load Balancer
 
-ELB & ASG - Auto scaling Group
-
 --> Terms
 
 ### Scalibility -
@@ -90,3 +88,30 @@ Ex. ASG
 1. Application load balancer(ALB):- perfect for web applications, handling HTTP & HTTPS requests(layer7)
 2. Network load balancer(NLB):- high performance, low latency, - gaming, financial apps.
 3. Gateway Load Balancer(GLB):- helps deploy, scale and manage third party virtual appliances, such as firewalls and monitoring solutions.
+
+## AWS ASG - Auto Scaling Group
+
+1. It is service that automatically "Adds" or "Remove" EC2 instance based on demand to ensure your application is always available.
+2. Help scale up when more capacity is needed and scale down during low usage save costs, keeping the right no. of servers running at all times.
+
+## Functions of ASG
+
+1. Automatic Scaling - scale the no. of EC2 instances up or down based on demand.
+2. Maintain Instance Health - Replace unhealthy instance automatically to ensure reliability.
+3. Use Scaling policies - Set rules for scaling based on metrics like CPU usage or request count.
+4. Ensure Availability - Always keep a defined no. of instances running to meet application needs.
+5. Schedule Scaling - Pre-configure scaling activities for specific times (eg, traffic peaks).
+6. Distribute Instances: Deploy instances acroess multiple availablity zones for high availability.
+7. Integrate with ELB - Attach instances to an Elastic Load Balancer to automatically balance traffic.
+8. Optimize Costs - Scale down during low demand to save on infra cost.
+
+Steps:-
+
+1. Launch Template or config
+2. Create auto scaling grp
+3. select VPC and subnets
+4. attach LB(op.)
+5. config scalling policies
+6. health checks
+7. add notifications
+8. review and create
